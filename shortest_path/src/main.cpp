@@ -8,7 +8,7 @@ using namespace graph_theory;
 
 int main(int argc, char** argv) {
     shortest_path::Graph graph;
-    const char* filename = argc < 2 ? "./adjacency_matrix.txt" : argv[1];
+    const char* filename = argc < 2 ? "./matrix.txt" : argv[1];
     if (!std::filesystem::exists(filename)) {
         std::string msg = "Invaild path: ";
         msg += filename;
